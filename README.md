@@ -1,2 +1,3 @@
 # Talk-Startup-to-me
-Event Website
+Rules to Contribute:
+
