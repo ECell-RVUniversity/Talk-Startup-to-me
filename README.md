@@ -7,7 +7,6 @@
 
 2. **Clone and Install Dependencies**  
    ```bash
-   git clone https://github.com/your-username/Talk-Startup-to-me.git
    cd Talk-Startup-to-me
    npm install
    npm run dev
