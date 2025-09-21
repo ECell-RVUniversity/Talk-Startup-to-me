@@ -4,45 +4,27 @@ import { Calendar, Users, Code, Trophy, Target, Flag } from "lucide-react"
 export function TimelineSection() {
   const timelineEvents = [
     {
-      date: "20th June 2025",
-      title: "Project Assignment to Mentors",
-      description: "Mentors are assigned to projects and begin preparing to guide contributors throughout the program.",
+      date: "2nd October 2025",
+      time: "2:00 - 3:00 PM",
+      title: "Keynote Address",
+      description: "An accomplished CEO shares insights from their entrepreneurial journey, covering strategies for building, scaling, and sustaining ventures.",
       icon: Users,
-      status: "completed",
+      status: "upcoming",
     },
     {
-      date: "23rd June 2025",
-      title: "Community Bonding Period Starts",
-      description: "Contributors and mentors interact, discuss project goals, and get familiar with the community.",
+      date: "2nd october 2025",
+      time:"3:00 - 5:00 PM",
+      title: "Mentorship Session",
+      description: " The CEO mentors 10 teams (50 students in total), offering guidance on product validation, pitch decks, and startup strategies. ",
       icon: Target,
-      status: "active",
+      status: "upcoming",
     },
     {
-      date: "To Be Announced",
-      title: "Coding Period Starts",
+      date: "2nd october 2025",
+      time:"5:00 - 6:00 PM",
+      title: "Networking & Closing",
       description:
-        "Contributors officially start working on their assigned open source projects under mentor supervision.",
-      icon: Code,
-      status: "upcoming",
-    },
-    {
-      date: "To Be Announced",
-      title: "Leaderboard Opens",
-      description: "The leaderboard is made public, allowing participants to track their progress and contributions.",
-      icon: Trophy,
-      status: "upcoming",
-    },
-    {
-      date: "To Be Announced",
-      title: "Coding Period Ends",
-      description: "The official coding phase concludes; contributors submit their final work for evaluation.",
-      icon: Flag,
-      status: "upcoming",
-    },
-    {
-      date: "To Be Announced",
-      title: "Results Declared",
-      description: "Final results are announced, recognizing top contributors and successful projects.",
+        " Informal interactions, acknowledgements, and opportunities for meaningful conversations between participants, mentors, and attendees.",
       icon: Trophy,
       status: "upcoming",
     },
@@ -57,6 +39,7 @@ export function TimelineSection() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             What's happening and when will things happen throughout the program
+            Place and time of different sessions
           </p>
         </div>
 
@@ -104,6 +87,7 @@ export function TimelineSection() {
                                 }`}
                               >
                                 {event.date}
+                                <p className="text-sm text-accent font-medium mb-2">{event.time}</p> 
                               </span>
                             </div>
                             <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
@@ -129,3 +113,4 @@ export function TimelineSection() {
     </section>
   )
 }
+
